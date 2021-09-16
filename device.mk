@@ -291,7 +291,8 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.nt
+    vendor.lineage.powershare@1.0-service.nothing
+
 
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
