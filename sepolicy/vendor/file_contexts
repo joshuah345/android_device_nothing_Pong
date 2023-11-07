@@ -25,4 +25,4 @@
 /vendor/bin/hw/android\.hardware\.sensors@[0-9]\.[0-9]-service\.nt\.pong-multihal      u:object_r:hal_sensors_default_exec:s0
 
 # Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.nt\.pong      u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.nt                        u:object_r:hal_vibrator_default_exec:s0
