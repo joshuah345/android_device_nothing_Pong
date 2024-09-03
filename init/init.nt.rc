@@ -22,6 +22,10 @@ on boot
     chown system system /sys/devices/platform/soc/994000.i2c/i2c-0/0-003a/leds/led_strips/operating_mode
     chown system system /sys/devices/platform/soc/994000.i2c/i2c-0/0-003a/leds/led_strips/single_brightness
 
+    # OTG
+    chown system system /proc/charger/nt_otg_enable
+    write /proc/charger/nt_otg_enable 4
+
 on post-fs-data
     # Enable WLAN SSR
     write /sys/kernel/cnss/recovery 1
