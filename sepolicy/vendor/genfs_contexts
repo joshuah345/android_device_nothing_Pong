@@ -9,7 +9,7 @@ genfscon sysfs /devices/platform/goodix_ts.0/fp_state               u:object_r:v
 genfscon sysfs /devices/platform/goodix_ts.0/single_tap             u:object_r:vendor_sysfs_sensors:s0
 
 # OTG Switch
-genfscon proc /charger/nt_otg_enable																																							u:object_r:proc_otg_switch:s0
+genfscon proc /charger/nt_otg_enable																				u:object_r:proc_charger:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-3/3-005a/leds/aw_vibrator   u:object_r:sysfs_vibrator:s0
