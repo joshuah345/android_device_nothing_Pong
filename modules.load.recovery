@@ -28,6 +28,7 @@ gh_ctrl.ko
 gh_dbl.ko
 gh_msgq.ko
 gh_rm_drv.ko
+gh_virt_wdt.ko
 hwkm.ko
 icc-bcm-voter.ko
 iommu-logger.ko
@@ -45,7 +46,6 @@ msm_geni_serial.ko
 nvmem_qcom-spmi-sdam.ko
 phy-generic.ko
 phy-qcom-ufs.ko
-phy-qcom-ufs-qmp-v4-waipio.ko
 phy-qcom-ufs-qmp-v4-cape.ko
 pinctrl-cape.ko
 pinctrl-msm.ko
@@ -65,6 +65,7 @@ spmi-pmic-arb.ko
 qcom-reboot-reason.ko
 qcom_rpmh.ko
 qcom-scm.ko
+qcom_wdt_core.ko
 qnoc-qos.ko
 qrtr.ko
 regmap-spmi.ko
@@ -90,7 +91,6 @@ msm_sysstats.ko
 zsmalloc.ko
 lzo.ko
 lzo-rle.ko
-msm_show_resume_irq.ko
 mhi_cntrl_qcom.ko
 mhi.ko
 mhi_dev_uci.ko
@@ -128,7 +128,6 @@ rq_stats.ko
 dcc_v2.ko
 smcinvoke_mod.ko
 microdump_collector.ko
-llcc_perfmon.ko
 smp2p_sleepstate.ko
 sensors_ssc.ko
 glink_pkt.ko
@@ -154,7 +153,6 @@ gplaf_scmi.ko
 shared_rail_scmi.ko
 qdss_bridge.ko
 memlat.ko
-qcom_logbuf_vendor_hooks.ko
 panel_event_notifier.ko
 qcom_sync_file.ko
 hung_task_enh.ko
@@ -272,12 +270,6 @@ simulated_ntc.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
 hwmon.ko
-qti_amoled_ecm.ko
-stm_core.ko
-stm_p_basic.ko
-stm_p_ost.ko
-stm_console.ko
-stm_ftrace.ko
 snd-usb-audio-qmi.ko
 qrtr-smd.ko
 qrtr-mhi.ko
