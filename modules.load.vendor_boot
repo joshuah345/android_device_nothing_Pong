@@ -28,6 +28,7 @@ gh_ctrl.ko
 gh_dbl.ko
 gh_msgq.ko
 gh_rm_drv.ko
+gh_virt_wdt.ko
 hwkm.ko
 icc-bcm-voter.ko
 iommu-logger.ko
@@ -45,7 +46,6 @@ msm_geni_serial.ko
 nvmem_qcom-spmi-sdam.ko
 phy-generic.ko
 phy-qcom-ufs.ko
-phy-qcom-ufs-qmp-v4-waipio.ko
 phy-qcom-ufs-qmp-v4-cape.ko
 pinctrl-cape.ko
 pinctrl-msm.ko
@@ -65,6 +65,7 @@ spmi-pmic-arb.ko
 qcom-reboot-reason.ko
 qcom_rpmh.ko
 qcom-scm.ko
+qcom_wdt_core.ko
 qnoc-qos.ko
 qrtr.ko
 regmap-spmi.ko
