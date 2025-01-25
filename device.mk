@@ -126,6 +126,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service
 
+# Dolby
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+
+PRODUCT_PACKAGES += \
+libstagefright_foundation-v33
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
