@@ -85,6 +85,31 @@ DEVICE_MANIFEST_FILE += \
     hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
+# Kernel (prebuilt)
+KERNEL_PATH := kernel/nothing/Pong-prebuilt
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo/dtbo.img
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+TARGET_PREBUILT_DTB := $(KERNEL_PATH)/dtb.img
+
+TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_COPY_FILES += \
+	$(KERNEL_PATH)/images/Meteoric-v5.Image:kernel \
+    $(TARGET_PREBUILT_DTB):dtb.img
+
+
+# Kernel modules
+DLKM_MODULES_PATH := $(KERNEL_PATH)/modules/dlkm
+RAMDISK_MODULES_PATH := $(KERNEL_PATH)/modules/ramdisk
+
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DLKM_MODULES_PATH)/*.ko)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(patsubst %,$(DLKM_MODULES_PATH)/%,$(shell cat $(DLKM_MODULES_PATH)/modules.load))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DLKM_MODULES_PATH)/modules.blocklist
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(RAMDISK_MODULES_PATH)/*.ko)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(patsubst %,$(RAMDISK_MODULES_PATH)/%,$(shell cat $(RAMDISK_MODULES_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD  := $(patsubst %,$(RAMDISK_MODULES_PATH)/%,$(shell cat $(RAMDISK_MODULES_PATH)/modules.load.recovery))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(RAMDISK_MODULES_PATH)/modules.blocklist
+
 # Kernel
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -97,7 +122,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
 TARGET_KERNEL_SOURCE := kernel/nothing/sm8475
-TARGET_KERNEL_CONFIG := vendor/meteoric_defconfig
+# T#ARGET_KERNEL_CONFIG := vendor/meteoric_defconfig
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
