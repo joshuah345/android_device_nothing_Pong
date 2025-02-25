@@ -5,4 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_Pong.mk
+    $(LOCAL_DIR)/clover_Pong.mk
+
+COMMON_LUNCH_CHOICES := \
+    clover_Pong-ap4a-user \
+    clover_Pong-ap4a-userdebug
