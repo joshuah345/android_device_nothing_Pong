@@ -7,6 +7,8 @@
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+TARGET_BOARD_PLATFORM := taro
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
 
