@@ -252,7 +252,8 @@ PRODUCT_COPY_FILES += \
     Diag_Lib \
     AGM \
     AHAL \
-    CamX
+    CamX \
+    minksocket
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
