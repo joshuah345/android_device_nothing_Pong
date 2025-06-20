@@ -110,6 +110,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+<!--     
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
@@ -119,6 +120,7 @@
             <instance>dpmQmiService</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>com.qualcomm.qti.imscmservice</name>
         <transport>hwbinder</transport>
@@ -274,6 +276,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+<!--     
     <hal format="hidl">
         <name>vendor.qti.hardware.dpmservice</name>
         <transport>hwbinder</transport>
@@ -283,6 +286,7 @@
             <instance>DpmService</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>vendor.qti.hardware.dsp</name>
         <transport>hwbinder</transport>
@@ -310,6 +314,7 @@
             <instance>embmsslServer0</instance>
         </interface>
     </hal>
+<!--     
     <hal format="hidl">
         <name>vendor.qti.hardware.factory</name>
         <transport>hwbinder</transport>
@@ -319,6 +324,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
@@ -328,6 +334,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+<!--     
     <hal format="hidl">
         <name>vendor.qti.hardware.mwqemadapter</name>
         <transport>hwbinder</transport>
@@ -337,6 +344,7 @@
             <instance>MwqemAdapter</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>vendor.qti.hardware.pal</name>
         <transport>hwbinder</transport>
