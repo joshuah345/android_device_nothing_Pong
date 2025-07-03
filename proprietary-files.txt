@@ -127,6 +127,11 @@ vendor/lib64/hw/audio.primary.taro.so
 vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/lib_lvacfs.so
 vendor/lib64/libadm.so
+vendor/lib64/libar-acdb.so
+vendor/lib64/libar-gpr.so
+vendor/lib64/libar-gsl.so
+vendor/lib64/libar-pal.so;DISABLE_CHECKELF
+vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
@@ -137,11 +142,18 @@ vendor/lib64/libeai_float.so
 vendor/lib64/libfastcrc.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/liblvacfs_wrapper.so
-vendor/lib64/libmcs.so;DISABLE_CHECKELF
+vendor/lib64/liblx-ar_util.so
+vendor/lib64/liblx-osal.so
+vendor/lib64/libmcs.so
 vendor/lib64/libpal_net_if.so
-vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
+vendor/lib64/libqtigefar.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+
+# Audio AGM
+vendor/lib64/libagm.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio FX modules
 vendor/lib64/soundfx/libasphere.so
@@ -1324,9 +1336,10 @@ vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_cape/video_system_specs.json
 vendor/etc/media_codecs_c2_audio.xml
-vendor/etc/media_codecs_cape_vendor.xml:vendor/etc/media_codecs_cape.xml
-vendor/etc/media_codecs_performance_cape_vendor.xml:vendor/etc/media_codecs_performance_cape.xml
-vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs_cape.xml
+vendor/etc/media_codecs_performance_cape.xml
+vendor/etc/media_codecs_performance_cape_vendor.xml
+vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_cape.xml
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
