@@ -247,6 +247,8 @@ PRODUCT_COPY_FILES += \
 # Logging
  SPAMMY_LOG_TAGS := \
     Diag_Lib \
+    KernelSU \
+    SDM \
     AGM \
     AHAL \
     CamX \
