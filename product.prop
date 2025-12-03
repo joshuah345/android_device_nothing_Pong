@@ -27,5 +27,9 @@ persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
 persist.vendor.vonr_setting_support=1
 
+# Remote Key Provisioning (RKP)
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+
 # Game FrameRate
 debug.graphics.game_default_frame_rate.disabled=true
