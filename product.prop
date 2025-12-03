@@ -18,3 +18,7 @@ ro.camerax.extensions.enabled=true
 
 # GMS
 ro.opa.eligible_device=true
+
+# Remote Key Provisioning (RKP)
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
