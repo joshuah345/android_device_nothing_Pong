@@ -8,4 +8,11 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.noth.hardware.camera</name>
+        <interface>
+            <name>INtCamService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

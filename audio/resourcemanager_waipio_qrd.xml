@@ -27,7 +27,7 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                             -->
 <!--                                                                                      -->
 <!-- Changes from Qualcomm Innovation Center are provided under the following license:    -->
-<!-- Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.             -->
+<!-- Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.             -->
 <!--                                                                                      -->
 <!-- Redistribution and use in source and binary forms, with or without                   -->
 <!-- modification, are permitted (subject to the limitations in the                       -->
@@ -70,7 +70,7 @@
         <param key="context_manager_enable" value ="false" />
         <param key="lpi_logging_enable" value ="false" />
         <param key="upd_dedicated_be" value ="true" />
-	<param key="signal_handler" value ="true" />
+        <param key="signal_handler" value ="true" />
     </config_params>
     <config_volume>
         <use_volume_set_param>0</use_volume_set_param>
@@ -360,6 +360,7 @@
                 <id>PAL_DEVICE_OUT_SPEAKER</id>
                 <id>PAL_DEVICE_OUT_HANDSET</id>
                 <id>PAL_DEVICE_OUT_BLUETOOTH_A2DP</id>
+                <id>PAL_DEVICE_OUT_BLUETOOTH_BLE</id>
             </ec_rx_device>
         </in-device>
         <in-device>
@@ -374,6 +375,7 @@
                 <id>PAL_DEVICE_OUT_WIRED_HEADSET</id>
                 <id>PAL_DEVICE_OUT_WIRED_HEADPHONE</id>
                 <id>PAL_DEVICE_OUT_BLUETOOTH_A2DP</id>
+                <id>PAL_DEVICE_OUT_BLUETOOTH_BLE</id>
             </ec_rx_device>
         </in-device>
         <in-device>
@@ -446,6 +448,34 @@
             <bit_width>16</bit_width>
         </in-device>
         <in-device>
+            <id>PAL_DEVICE_IN_BLUETOOTH_BLE</id>
+            <back_end_name>SLIM-DEV1-TX-7</back_end_name>
+            <max_channels>1</max_channels>
+            <channels>1</channels>
+            <snd_device_name>bt-ble-mic</snd_device_name>
+            <samplerate>44100</samplerate>
+            <bit_width>16</bit_width>
+            <usecase>
+                <name>PAL_STREAM_LOW_LATENCY</name>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_DEEP_BUFFER</name>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOIP_TX</name>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOICE_CALL</name>
+                <priority>1</priority>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
+            </usecase>
+            <ec_rx_device>
+                <id>PAL_DEVICE_OUT_BLUETOOTH_BLE</id>
+            </ec_rx_device>
+        </in-device>
+        <in-device>
             <id>PAL_DEVICE_IN_TELEPHONY_RX</id>
             <back_end_name>PCM_RT_PROXY-TX-1</back_end_name>
             <max_channels>2</max_channels>
@@ -493,7 +523,7 @@
             <samplerate>48000</samplerate>
             <bit_width>32</bit_width>
             <snd_device_name>speaker</snd_device_name>
-            <speaker_protection_enabled>0</speaker_protection_enabled>
+            <speaker_protection_enabled>1</speaker_protection_enabled>
             <fractional_sr>0</fractional_sr>
             <!-- To enable external EC reference the flag extec_ref_enabled must be added as 1 -->
             <ext_ec_ref_enabled>0</ext_ec_ref_enabled>
@@ -686,6 +716,19 @@
             <max_channels>1</max_channels>
             <channels>1</channels>
             <snd_device_name>bt-a2dp</snd_device_name>
+            <samplerate>44100</samplerate>
+            <bit_width>16</bit_width>
+            <usecase>
+                <name>PAL_STREAM_VOICE_CALL</name>
+                <priority>1</priority>
+            </usecase>
+        </out-device>
+        <out-device>
+            <id>PAL_DEVICE_OUT_BLUETOOTH_BLE</id>
+            <back_end_name>SLIM-DEV1-RX-7</back_end_name>
+            <max_channels>1</max_channels>
+            <channels>1</channels>
+            <snd_device_name>bt-ble</snd_device_name>
             <samplerate>44100</samplerate>
             <bit_width>16</bit_width>
             <usecase>
