@@ -119,6 +119,12 @@ vendor/lib/rfsa/adsp/libvpt_action_recognition.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
+vendor/etc/audio/sku_cape/mixer_paths_waipio_cdp.xml
+vendor/etc/audio/sku_cape/mixer_paths_waipio_mtp.xml
+vendor/etc/audio/sku_cape/mixer_paths_waipio_qrd.xml
+vendor/etc/audio/sku_cape/resourcemanager_waipio_cdp.xml
+vendor/etc/audio/sku_cape/resourcemanager_waipio_mtp.xml
+vendor/etc/audio/sku_cape/resourcemanager_waipio_qrd.xml
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
