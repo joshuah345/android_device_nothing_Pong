@@ -224,7 +224,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.zram \
     init.class_main.sh \
     init.nt.hw.rc \
     init.nt.hw.rc.recovery \
