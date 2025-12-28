@@ -329,6 +329,8 @@ PRODUCT_PACKAGES += \
     NTSettingsResTarget \
     NTSystemUIResTarget \
     NTWifiResTarget \
+    WallpaperPicker2PixelRes \
+    WallpaperPicker2Res \
     EvolutionSettingsOverlay
 
 # NCM overlays
