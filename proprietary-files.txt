@@ -1616,6 +1616,9 @@ vendor/lib64/vendor.qti.qesdhal@1.1-impl.so
 vendor/lib64/vendor.qti.qesdhal@1.1.so
 vendor/lib64/vendor.qti.qesdsys-V1-ndk_platform.so
 
+# QSPM
+vendor/lib64/vendor.qti.qspmhal@1.0.so
+
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
