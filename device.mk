@@ -158,6 +158,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# Glyph
+PRODUCT_PACKAGES += \
+    ParanoidGlyphPhone2 \
+    GlyphAdapter
+
 # Graphics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -246,10 +251,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     nt-fwk.pong
-
-# NT-glyph
-PRODUCT_PACKAGES += \
-    PongGlyph
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
