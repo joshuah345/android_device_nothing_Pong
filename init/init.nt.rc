@@ -44,6 +44,11 @@ on post-fs-data
     # Enable WLAN SSR
     write /sys/kernel/cnss/recovery 1
 
+    chown system system /sys/class/kgsl/kgsl-3d0/max_gpuclk
+    chmod 0660 /sys/class/kgsl/kgsl-3d0/max_gpuclk
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/cur_freq
+    chmod 0440 /sys/class/kgsl/kgsl-3d0/devfreq/cur_freq
+
 on property:sys.boot_completed=1
     chown system system /sys/class/qcom-battery/wireless_boost_en
     chown system system /sys/class/qcom-battery/wls_reverse_status
