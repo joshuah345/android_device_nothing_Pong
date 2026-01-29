@@ -11,4 +11,5 @@
     proc_simulated_temp
     sltntc
     sysfs_powershare
-    gamebar_app))
+    gamebar_app
+    device_extras))
