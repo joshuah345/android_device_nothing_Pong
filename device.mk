@@ -46,7 +46,6 @@ PRODUCT_PACKAGES += \
     audioadsprpcd \
     libagm_compress_plugin \
     libagm_mixer_plugin \
-    libagmmixer \
     libagm_pcm_plugin \
     libbatterylistener \
     libfmpal \
