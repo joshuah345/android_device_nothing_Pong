@@ -193,6 +193,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 $(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.nothing)
 
+TARGET_HAS_UDFPS := true
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
