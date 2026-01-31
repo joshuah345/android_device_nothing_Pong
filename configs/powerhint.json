@@ -521,6 +521,12 @@
       "Node": "CPUBigPlusClusterMaxFreq",
       "Duration": 0,
       "Value": "1536000"
+    },
+    {
+      "PowerHint": "Flipendo",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "710000000"
     }
   ]
 }
