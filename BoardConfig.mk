@@ -88,7 +88,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
 TARGET_KERNEL_SOURCE := kernel/nothing/sm8475
-TARGET_KERNEL_CONFIG := vendor/meteoric_defconfig
+TARGET_KERNEL_CONFIG := vendor/ryuusei_defconfig
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
