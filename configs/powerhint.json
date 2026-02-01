@@ -302,6 +302,18 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "439000000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUIdleTimer",
+      "Duration": 0,
+      "Value": "10000"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "UclampTAMin",
       "Duration": 0,
       "Value": "60"
