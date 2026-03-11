@@ -19,8 +19,6 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/nothing/Pong/camera',
-    'frameworks/av/camera',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys/display',
