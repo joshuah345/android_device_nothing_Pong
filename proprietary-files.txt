@@ -1184,7 +1184,7 @@ vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
 
 # Graphics (Vulkan)
-vendor/lib64/hw/vulkan.adreno.so
+vendor/lib64/hw/vulkan.adreno.so|3e0723db2b1566dc48494f5e5e295a2b0a91a8f5
 
 # GNSS
 vendor/bin/edgnss-daemon
