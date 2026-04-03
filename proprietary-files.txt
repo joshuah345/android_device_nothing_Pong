@@ -1967,7 +1967,9 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/trusteduilistener
 vendor/etc/init/trusteduilistener.rc
 
-# Vibrator firmware
+# Vibrator
+odm/etc/aac_richtap.config
+vendor/lib64/libaacvibrator.so
 vendor/firmware/haptic_ram.bin
 vendor/firmware/haptic_rtp.bin
 vendor/firmware/haptic_rtp_lighthouse.bin

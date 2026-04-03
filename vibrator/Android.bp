@@ -1,42 +1,28 @@
-Common_CFlags = ["-Wall"]
-Common_CFlags += ["-Werror"]
-
-cc_library_shared {
-    name: "vendor.qti.hardware.vibrator.impl.nt",
+cc_binary {
+    name: "android.hardware.vibrator.service.pong.richtap",
     vendor: true,
-    cflags: Common_CFlags,
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-DLOG_TAG=\"android.hardware.vibrator.service.pong.richtap\"",
+        "-DUSE_RICHTAP_EFFECT_REMAP", 
+    ],
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.vibrator.service.pong.richtap.rc"],
+    vintf_fragments: [
+        "android.hardware.vibrator.service.pong.richtap.xml",
+    ],
     srcs: [
+        "service.cpp",
         "Vibrator.cpp",
     ],
     shared_libs: [
         "libcutils",
         "libutils",
         "liblog",
-        "libqtivibratoreffect",
-        "libbinder_ndk",
-        "android.hardware.vibrator-V2-ndk",
-    ],
-    export_include_dirs: ["include"]
-}
-
-cc_binary {
-    name: "vendor.qti.hardware.vibrator.service.nt",
-    vendor: true,
-    relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.vibrator.service.nt.rc"],
-    vintf_fragments: [
-        "vendor.qti.hardware.vibrator.service.nt.xml",
-    ],
-    cflags: Common_CFlags,
-    srcs: [
-        "service.cpp",
-    ],
-    shared_libs: [
-        "libcutils",
-        "libutils",
         "libbase",
         "libbinder_ndk",
+        "libaacvibrator",
         "android.hardware.vibrator-V2-ndk",
-        "vendor.qti.hardware.vibrator.impl.nt",
     ],
 }
