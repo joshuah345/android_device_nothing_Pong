@@ -423,10 +423,6 @@ PRODUCT_SOONG_NAMESPACES += \
     packages/apps/GlyphAdapter \
     packages/apps/ParanoidGlyph
 
-# Shims
-PRODUCT_PACKAGES += \
-    lib_shim_ntcamera
-
 # Task Profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
