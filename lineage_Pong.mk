@@ -30,3 +30,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=Pong \
     SystemDevice=Pong \
     SystemName=Pong
+
+AXION_CAMERA_REAR_INFO := 50,50
+AXION_CAMERA_FRONT_INFO := 32
+
+AXION_MAINTAINER := hiroshi._(Superuser)
+
+AXION_PROCESSOR := Snapdragon_8+_Gen_1
+
+TARGET_DOZE_TAP_PULSE_SUPPORTED := true
+TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
