@@ -154,7 +154,7 @@
       "Name": "GPUIdleTimer",
       "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
       "Values": [
-        "10000",
+        "5000",
         "58"
       ],
       "ResetOnInit": true
@@ -329,7 +329,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUIdleTimer",
       "Duration": 0,
-      "Value": "10000"
+      "Value": "5000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -527,7 +527,7 @@
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
       "Duration": 2000,
-      "Value": "10000"
+      "Value": "5000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -551,7 +551,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUIdleTimer",
       "Duration": 0,
-      "Value": "10000"
+      "Value": "5000"
     },
     {
       "PowerHint": "Flipendo",
