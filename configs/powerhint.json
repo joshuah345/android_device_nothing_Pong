@@ -520,9 +520,15 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "GPUMaxFreq",
+      "Duration": 2000,
+      "Value": "862000000"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "GPUMinFreq",
       "Duration": 2000,
-      "Value": "515000000"
+      "Value": "439000000"
     },
     {
       "PowerHint": "LAUNCH",
