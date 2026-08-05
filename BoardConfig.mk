@@ -76,6 +76,8 @@ DEVICE_MANIFEST_FILE += \
     hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
+-include hardware/dolby/configs/vintf/config.mk
+
 # Kernel
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
