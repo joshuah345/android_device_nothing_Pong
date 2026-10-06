@@ -10,6 +10,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
 
+# AxionFx
+$(call inherit-product, packages/apps/AxionFx/config.mk)
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -167,6 +170,7 @@ PRODUCT_COPY_FILES += \
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
+TARGET_BUILD_DOLBY_EFFECTS := false
 
 # DRM
 PRODUCT_PACKAGES += \
